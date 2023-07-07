@@ -1,0 +1,244 @@
+@import url("https://fonts.googleapis.com/css2?family=Bree+Serif&family=Caveat:wght@400;700&family=Lobster&family=Monoton&family=Open+Sans:ital,wght@0,400;0,700;1,400;1,700&family=Playfair+Display+SC:ital,wght@0,400;0,700;1,700&family=Playfair+Display:ital,wght@0,400;0,700;1,700&family=Roboto:ital,wght@0,400;0,700;1,400;1,700&family=Source+Sans+Pro:ital,wght@0,400;0,700;1,700&family=Work+Sans:ital,wght@0,400;0,700;1,700&display=swap");
+
+.app-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  font-family: "Roboto";
+  width: 100vw;
+}
+.nav-container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 10px;
+  border-bottom: 2px solid #500583;
+}
+.options {
+  display: flex;
+  align-items: center;
+}
+.icon {
+  font-size: 20px;
+  color: black;
+  margin-right: 10px;
+}
+.option-text {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-right: 20px;
+  color: black;
+  transition: transform 0.3s;
+}
+.top-section {
+  background-image: linear-gradient(
+    to left,
+    rgb(169, 139, 238),
+    rgb(230, 222, 236)
+  );
+  height: 100vh;
+}
+.nav-menu {
+  font-size: 20px;
+  margin-top: 15px;
+  margin-right: 20px;
+  color: black;
+}
+.slide-container-shop {
+  padding: 20px;
+  height: 50vh;
+  width: 100%;
+}
+.image-slide {
+  height: 350px;
+  width: 100%;
+}
+.category {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: "Bree-serif";
+  color: black;
+}
+.middle-section {
+  background-color: white;
+  padding: 20px;
+}
+.image-brand {
+  width: 100%;
+  height: 10vh;
+}
+.brand-view {
+  width: 100%;
+  height: 60vh;
+  margin-top: 20px;
+}
+.product-section {
+  padding: 20px;
+  background-image: linear-gradient(
+    to left,
+    rgb(169, 139, 238),
+    rgb(230, 222, 236)
+  );
+}
+.head-container {
+  position: relative;
+  height: 50px;
+}
+.product-container-view {
+  display: flex;
+  flex-wrap: wrap;
+}
+.product {
+  display: flex;
+  flex-direction: column;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  background-color: white;
+  flex-grow: 1;
+  transition: transform 0.3s;
+}
+.price {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 15px;
+}
+.text {
+  font-size: 12px;
+  color: black;
+  margin-left: 10px;
+  margin-right: 10px;
+}
+.product-image {
+  height: 250px;
+  width: 100%;
+  flex-grow: 1;
+}
+.footer {
+  height: 300px;
+  width: 100%;
+  margin-top: 20px;
+}
+@media screen and (max-width: 576px) {
+  .nav-menu {
+    display: none;
+  }
+  .category .option-text {
+    display: none;
+  }
+  .icon {
+    margin-right: 20px;
+  }
+  .top-section {
+    height: auto;
+  }
+  .image-brand {
+    width: 100%;
+    height: 30px;
+  }
+  .brand-view {
+    height: 20vh;
+    width: 100%;
+  }
+  .head-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .text-all {
+    margin-top: 10px;
+  }
+  .product {
+    margin-right: 0;
+    flex-grow: 1;
+    margin-bottom: 30px;
+  }
+  .zara {
+    height: 200px;
+    width: 100%;
+  }
+  .footer {
+    height: 100px;
+    width: 100%;
+  }
+  .summer {
+    display: block;
+  }
+}
+.animation-container {
+  margin-bottom: 30px;
+  position: relative;
+  margin-top: 0;
+  text-align: center;
+}
+
+.extra {
+  text-align: center;
+  font-weight: bold;
+  font-family: "Bree Serif";
+  position: relative;
+  left: 0;
+  top: 0;
+  animation: slide 2s infinite ease;
+}
+
+@keyframes slide {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.nav-menu:hover {
+  color: aliceblue;
+  cursor: pointer;
+  font-size: 23px;
+}
+
+.category .option-text:hover {
+  color: aliceblue;
+  font-size: 23px;
+  cursor: pointer;
+  transform: scale(1);
+}
+
+.summer {
+  font-size: 30px;
+  margin-right: 20px;
+  color: rgb(241, 77, 187);
+  font-weight: bold;
+  width: auto;
+  animation: sale 2s infinite;
+  left: 0;
+}
+@keyframes sale {
+  0% {
+    color: blueviolet;
+  }
+  25% {
+    color: #f3b711;
+  }
+  50% {
+    color: rgb(236, 35, 35);
+  }
+  75% {
+    color: #54e61a;
+  }
+  100% {
+    color: rgb(245, 26, 154);
+  }
+}
+.product:hover {
+  transform: scaleY(1.1);
+  box-shadow: 0px 4px 16px 4px #bfbfbf;
+}
+.head-container .text-all {
+  font-size: 20px;
+  color: black;
+}
